@@ -9,8 +9,9 @@ import pandas as pd
 
 # Set the title and favicon that appear in the Browser's tab bar.
 st.set_page_config(
-    page_title="Inventory tracker",
-    page_icon=":shopping_bags:",  # This is an emoji shortcode. Could be a URL too.
+    # page_title="Inventory tracker",
+    page_title="Inventory Dashboard",
+    page_icon=":convenience_store:",  # This is an emoji shortcode. Could be a URL too.
 )
 
 
@@ -170,19 +171,20 @@ def update_data(conn, df, changes):
 # Draw the actual page, starting with the inventory table.
 
 # Set the title that appears at the top of the page.
-"""
-# :shopping_bags: Inventory tracker
+# """
+# # :convenience_store: Inventory tracker
 
-**Welcome to Alice's Corner Store's intentory tracker!**
-This page reads and writes directly from/to our inventory database.
-"""
+# **Welcome to Alice's Corner Store's intentory tracker!**
+# This page reads and writes directly from/to our inventory database.
+# """
 
-st.info(
-    """
-    Use the table below to add, remove, and edit items.
-    And don't forget to commit your changes when you're done.
-    """
-)
+
+"""
+# :convenience_store: Inventory Dashboard
+
+**Welcome to Your Neighborhood Convenience Store's!**
+This inventory dashboard page reads and writes directly from/to our inventory database.
+"""
 
 # Connect to database and create table if needed
 conn, db_was_just_created = connect_db()
