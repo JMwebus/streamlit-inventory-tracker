@@ -183,6 +183,7 @@ def update_data(conn, df, changes):
 # :convenience_store: Inventory Dashboard
 
 **Welcome to Your Neighborhood Convenience Store's!**
+
 This inventory dashboard page reads and writes directly from/to our inventory database.
 """
 
