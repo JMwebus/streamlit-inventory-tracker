@@ -200,7 +200,7 @@ df = load_data(conn)
 # Display data with editable table
 edited_df = st.data_editor(
     df,
-    disabled=["id"],  # Don't allow editing the 'id' column.
+    disabled=["id","item_name"],  # Don't allow editing the 'id' or "item_name" columns.
     num_rows="dynamic",  # Allow appending/deleting rows.
     column_config={
         # Show dollar sign before price columns.
